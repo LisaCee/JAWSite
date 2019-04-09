@@ -1,0 +1,36 @@
+ul {
+    list-style: none;
+    border: 1px solid #e3e2e2;
+    max-width: 100%;
+    padding: 5%;
+  }
+  
+  a.nav-header.brand.navbar-brand {
+    font-weight: 800;
+    font-size: 4rem;
+    font-family: "Cookie", cursive;
+    margin-bottom: 3%;
+    color: #e3420c;
+  }
+  
+  a.nav-link {
+    padding: 1%;
+    min-height: 2rem;
+    font-size: 1.25rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: right;
+  }
+  
+  a.nav-link:hover {
+    color: #e3420c !important;
+  }
+  
+  .fab.fa-instagram.fa-2x {
+    padding-top: 10%;
+  }
+  
+@media (min-width: 992px) {
+    .navbar-nav {
+        background: paleturquoise;
+    }
+}   
