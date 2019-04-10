@@ -27,8 +27,10 @@ class Sidebar extends Component {
   render() {
     return (
       <div>
-       <Navbar color="light" light expand="md" className="sidebar">
-          <NavbarBrand className="nav-header brand" href="/">jaw</NavbarBrand>
+        <Navbar color="light" light expand="md" className="sidebar">
+          <NavbarBrand className="nav-header brand" href="/">
+            jaw
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -45,7 +47,9 @@ class Sidebar extends Component {
                 <NavLink href="#">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#"><i className="fab fa-instagram fa-2x"></i></NavLink>
+                <NavLink href="#">
+                  <i className="fab fa-instagram fa-2x" />
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>
