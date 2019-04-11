@@ -1,12 +1,10 @@
 .sidebar {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 15px;
   margin: 2%;
 }
 
 nav.sidebar.navbar {
-  /* border: 1px solid red !important; */
   background-color: #f9f8f8 !important;
 }
 
@@ -29,7 +27,7 @@ a.nav-link {
 
 a.nav-link:hover {
   color: #e3420c !important;
-  font-weight: bold;
+  text-decoration: underline;
 }
 
 .fab.fa-instagram.fa-2x {
@@ -43,26 +41,11 @@ button.navbar-toggler {
 
 @media (min-width: 768px) {
   div.collapse.navbar-collapse {
-    margin-top: 5%;
+    margin-top: 15%;
   }
-  .fab.fa-instagram.fa-2x {
-    margin-top: -20px;
-  }
-  nav.sidebar.navbar {
-    /* border: 1px solid blue !important; */
-  }
-  .nav-header {
-    font-size: 1.35rem;
-    margin-bottom: 1rem;
-  }
-  a.nav-link {
-    font-size: 1.25rem;
-  }
-  .collapse {
-    display: flex;
-  }
-  .navbar-nav {
-    margin: 0;
+  li.nav-item{
+    white-space: nowrap;
+    margin-right: 1%;
   }
 }
 
@@ -71,7 +54,6 @@ button.navbar-toggler {
     flex-direction: column;
   }
   nav.sidebar.navbar {
-    /* border: 1px solid green !important; */
     height: 95vh;
     padding-right: 5rem;
   }
@@ -92,10 +74,4 @@ button.navbar-toggler {
     font-size: 1.25rem;
     padding: 7%;
   }
-  /* .collapse {
-    display: flex;
-  } */
-  /* .navbar-nav {
-    margin: 0;
-  } */
 }

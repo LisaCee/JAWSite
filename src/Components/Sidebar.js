@@ -48,7 +48,7 @@ class Sidebar extends Component {
               </NavItem>
               <NavItem>
                 <NavLink href="#">
-                  <i className="fab fa-instagram fa-2x" />
+                  <i className="fab fa-instagram fa-lg" />
                 </NavLink>
               </NavItem>
             </Nav>
