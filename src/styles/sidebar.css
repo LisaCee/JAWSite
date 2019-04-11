@@ -6,7 +6,8 @@
 }
 
 nav.sidebar.navbar {
-  border: 1px solid red !important;
+  /* border: 1px solid red !important; */
+  background-color: #f9f8f8 !important;
 }
 
 a.nav-header.brand.navbar-brand {
@@ -14,6 +15,7 @@ a.nav-header.brand.navbar-brand {
   font-size: 4rem;
   font-family: "Cookie", cursive;
   margin-bottom: 3%;
+  margin-left: 5%;
   color: #e3420c;
 }
 
@@ -27,6 +29,7 @@ a.nav-link {
 
 a.nav-link:hover {
   color: #e3420c !important;
+  font-weight: bold;
 }
 
 .fab.fa-instagram.fa-2x {
@@ -43,25 +46,17 @@ button.navbar-toggler {
     margin-top: 5%;
   }
   .fab.fa-instagram.fa-2x {
-    margin-top: -10px;
+    margin-top: -20px;
   }
-  /* .sidebar {
-    display: flex;
-    min-width: 30%;
-    border-radius: 25px;
-    display: flex;
-    border-radius: 15px;
-    align-items: flex-start;
-  } */
+  nav.sidebar.navbar {
+    /* border: 1px solid blue !important; */
+  }
   .nav-header {
     font-size: 1.35rem;
     margin-bottom: 1rem;
   }
   a.nav-link {
-    font-size: 1.5rem;
-    /* justify-content: flex-start; */
-    /* align-items: center; */
-    /* margin-top: 50%; */
+    font-size: 1.25rem;
   }
   .collapse {
     display: flex;
@@ -69,7 +64,38 @@ button.navbar-toggler {
   .navbar-nav {
     margin: 0;
   }
-  /* .navbar-expand-md .navbar-nav {
+}
+
+@media (min-width: 1350px) {
+  .navbar-expand-md .navbar-nav {
     flex-direction: column;
+  }
+  nav.sidebar.navbar {
+    /* border: 1px solid green !important; */
+    height: 95vh;
+    padding-right: 5rem;
+  }
+  .sidebar {
+    max-width: 15%;
+    display: flex;
+  }
+  .nav-header {
+    padding: 1%;
+    font-size: 1.35rem;
+    margin-left: 5%;
+  }
+  a.nav-link {
+    display: inline-block;
+    position: relative;
+    top: 5rem;
+    width: 140%;
+    font-size: 1.25rem;
+    padding: 7%;
+  }
+  /* .collapse {
+    display: flex;
+  } */
+  /* .navbar-nav {
+    margin: 0;
   } */
 }
