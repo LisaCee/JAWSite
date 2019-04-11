@@ -42,6 +42,7 @@ button.navbar-toggler {
 @media (min-width: 768px) {
   div.collapse.navbar-collapse {
     margin-top: 15%;
+    margin-right: 5%;
   }
   li.nav-item{
     white-space: nowrap;
@@ -58,14 +59,10 @@ button.navbar-toggler {
     padding-right: 5rem;
   }
   .sidebar {
-    max-width: 15%;
+    max-width: 20%;
     display: flex;
   }
-  .nav-header {
-    padding: 1%;
-    font-size: 1.35rem;
-    margin-left: 5%;
-  }
+
   a.nav-link {
     display: inline-block;
     position: relative;
