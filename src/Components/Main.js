@@ -1,34 +1,67 @@
 import React from "react";
-import "../styles/main.css";
-import Sidebar from "../Components/Sidebar.js";
 import { Container, Row, Col } from "reactstrap";
+
+import Sidebar from "./Sidebar";
+import "../styles/main.css";
 
 const Main = () => {
   return (
-    <div>
-      <Container>
-        <Row>
-            <Col sm="6" md="4">
-              <img
-                src={require("../images/JAWheart.jpg")}
-                alt="concrete lego hearts"
-              />
+    <Container>
+      <Row>
+        <Col>
+          <Row>
+            <Col md = "12" xl="3">
+              <Sidebar />
             </Col>
-            <Col sm="6" md="4">
-              <img src="http://placekitten.com/200/200" alt="kitty" />
+
+            <Col lg="9">
+              <div className="main">
+                <Row>
+                  <Col sm="10" md="4" >
+                    <img
+                      src="http://placekitten.com/300/300"
+                      alt="placeholder"
+                    />
+                  </Col>
+                  <Col sm="10" md="4">
+                    <img
+                      src="http://lorempixel.com/300/300"
+                      alt="placeholder"
+                    />
+                  </Col>
+                </Row>
+                <Row>
+                  <Col sm="10">
+                    <img
+                      src="http://lorempixel.com/300/300"
+                      alt="placeholder"
+                    />
+                  </Col>
+                  <Col sm="10">
+                    <img
+                      src="http://placekitten.com/300/300"
+                      alt="placeholder"
+                    />
+                  </Col>
+                  <Col sm="10">
+                    <img
+                      src="http://lorempixel.com/300/300"
+                      alt="placeholder"
+                    />
+                  </Col>
+                  <Col sm="10">
+                    <img
+                      src="http://lorempixel.com/300/300"
+                      alt="placeholder"
+                    />
+                  </Col>
+                </Row>
+              </div>
             </Col>
-            <Col sm="6" md="4">
-              <img src="http://placekitten.com/200/200" alt="kitty" />
-            </Col>
-            <Col sm="6" md="4">
-              <img src="http://placekitten.com/200/200" alt="kitty" />
-            </Col>
-            <Col sm="6" md="4">
-              <img src="http://placekitten.com/200/200" alt="kitty" />
-            </Col>
-        </Row>
-      </Container>
-    </div>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
