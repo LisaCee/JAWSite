@@ -1,17 +1,12 @@
 .main {
-  border: 2px solid red;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  align-items: flex-start
 }
 
 img {
-  width: 90%;
-  padding: 1%;
-  display: block;
+  padding-bottom: 1%;
   margin: auto;
-}
-
-@media (min-width: 768px) {
-  img {
-    margin: auto;
-  }
 }

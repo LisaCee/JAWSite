@@ -10,46 +10,44 @@ const Main = () => {
       <Row>
         <Col>
           <Row>
-            <Col md = "12" xl="3">
+            <Col sm="12" lg="3">
               <Sidebar />
             </Col>
 
             <Col lg="9">
               <div className="main">
                 <Row>
-                  <Col sm="10" md="4" >
+                  <Col md="6" lg="4">
                     <img
                       src="http://placekitten.com/300/300"
                       alt="placeholder"
                     />
                   </Col>
-                  <Col sm="10" md="4">
+                  <Col md="6" lg="4">
+                    <img
+                      src="http://lorempixel.com/300/400"
+                      alt="placeholder"
+                    />
+                  </Col>
+                  <Col md="6" lg="4">
+                    <img
+                      src="https://www.fillmurray.com/300/300"
+                      alt="placeholder"
+                    />
+                  </Col>
+                  <Col md="6" lg="4">
+                    <img
+                      src="http://placekitten.com/300/400"
+                      alt="placeholder"
+                    />
+                  </Col>
+                  <Col md="6" lg="4">
                     <img
                       src="http://lorempixel.com/300/300"
                       alt="placeholder"
                     />
                   </Col>
-                </Row>
-                <Row>
-                  <Col sm="10">
-                    <img
-                      src="http://lorempixel.com/300/300"
-                      alt="placeholder"
-                    />
-                  </Col>
-                  <Col sm="10">
-                    <img
-                      src="http://placekitten.com/300/300"
-                      alt="placeholder"
-                    />
-                  </Col>
-                  <Col sm="10">
-                    <img
-                      src="http://lorempixel.com/300/300"
-                      alt="placeholder"
-                    />
-                  </Col>
-                  <Col sm="10">
+                  <Col md="6" lg="4">
                     <img
                       src="http://lorempixel.com/300/300"
                       alt="placeholder"
