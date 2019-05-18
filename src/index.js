@@ -11,8 +11,7 @@ import {BasicRows} from "../src/Components/Gallery";
 function App() {
   return (
     <div className="App">
-      {/* <Main /> */}
-    <BasicRows/>
+      <Main />
     </div>
   );
 }
