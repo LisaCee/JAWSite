@@ -1,62 +1,32 @@
-import React, { Component } from "react";
+import React from "react";
 import "../styles/sidebar.css";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
 
-class Sidebar extends Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-  render() {
-    return (
-      <div>
-        <Navbar color="light" light expand="md" className="sidebar">
-          <NavbarBrand className="nav-header brand" href="/">
-            jaw
-          </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="#">Street Art</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">Fine Art</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">Store</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">About</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">
-                  <i className="fab fa-instagram fa-lg" />
-                </NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+// import Container from "react-bootstrap/Container";
+const Sidebar = () => {
+  return (
+    <div className='container-fluid h-100'>
+      <div className='row'>
+        <aside className='col-12 col-lg-3'>
+          <Navbar bg='light' expand='md' className='sidebar'>
+            <Navbar.Brand href='#home'>jaw</Navbar.Brand>
+            <Navbar.Toggle aria-controls='basic-navbar-nav' />
+            <Navbar.Collapse id='basic-navbar-nav'>
+              <Nav className='ml-auto'>
+                <Nav.Link href='#'>Street Art</Nav.Link>
+                <Nav.Link href='#'>Fine Art</Nav.Link>
+                <Nav.Link href='#'>Store</Nav.Link>
+                <Nav.Link href='#'>About</Nav.Link>
+                <Nav.Link href='#'>
+                  <i className='fab fa-instagram fa-lg' />
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </aside>
       </div>
-    );
-  }
-}
-
+    </div>
+  );
+};
 export default Sidebar;

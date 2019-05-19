@@ -6,6 +6,8 @@ import "./styles.css";
 // import Sidebar from "./Components/Sidebar";
 import Main from "./Components/Main";
 
+import {BasicRows} from "../src/Components/Gallery";
+
 function App() {
   return (
     <div className="App">
