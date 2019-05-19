@@ -5,7 +5,6 @@ a.navbar-brand {
   margin-left: 5%;
   color: #e3420c !important;
 }
-
 a.nav-link {
   padding: 2%;
   min-height: 2rem;
@@ -13,25 +12,21 @@ a.nav-link {
   font-family: "Montserrat", sans-serif;
   text-align: right;
 }
-
 a.nav-link:hover {
   color: #e3420c !important;
 }
-
+button.navbar-toggler {
+  margin-top: 3%;
+  padding: 3%;
+  border: 1px solid darkgrey;
+}
 .fab.fa-instagram.fa-2x {
   padding-top: 10%;
 }
-.sidebar {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 15px;
-  margin: 2%;
-}
+
 @media (min-width: 992px) {
   .sidebar {
-    max-width: 90% !important;
     display: flex;
-  
   }
   nav.sidebar.navbar {
     height: 90vh;
@@ -40,16 +35,14 @@ a.nav-link:hover {
   }
   a.navbar-brand {
     flex-direction: column;
-    margin-left: 10%;
   }
   a.nav-link {
     display: inline-block;
     position: relative;
-    width: 150%;
-    top: -10rem;
-    right: -3rem;
+    width: 125%;
+    top: -15rem;
+    right: -1rem;
     font-size: 1.5rem;
-    justify-content: flex-start;
     margin: 20px 10px 10px 10px;
   }
   .navbar-expand-md .navbar-nav {
